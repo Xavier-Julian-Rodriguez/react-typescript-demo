@@ -1,4 +1,5 @@
 import './App.css';
+import { Button } from './components/Button';
 import { Fitzgerald } from './components/Fitzgerald';
 import { Greet } from './components/Greet'
 import { Heading } from './components/Heading';
@@ -36,6 +37,9 @@ function App() {
      <Status status='success'/>
      <Person name={personName} />
      <PersonList names={nameList} />
+     <Button handleClick={(event, id) => {
+      console.log('Button clicked!', event, id)
+     }}/>
     </div>
   );
 }
