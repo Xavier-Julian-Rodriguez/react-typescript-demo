@@ -13,6 +13,9 @@ import { Box } from './components/context/Box'
 import { UserContextProvider } from './components/context/UserContext'
 import { User } from './components/context/User'
 import { Counter } from './components/class/Counter'
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
+import { RandomNumber } from './components/restriction/RandomNumber';
 
 function App() {
   const personName = {
@@ -62,6 +65,13 @@ function App() {
      <div>
       <Counter message='The count value is'/>
      </div>
+     <div>
+      <Private isLoggedIn={true} component={Profile}/>
+     </div>
+     <div>
+      <RandomNumber value={10} isPositive/>
+     </div>
+
     </div>
   );
 }
