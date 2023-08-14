@@ -1,3 +1,4 @@
+// example of moving the PersonProps type object to a seperate .ts file and importing
 type PersonProps = {
     name: {
         first: string
