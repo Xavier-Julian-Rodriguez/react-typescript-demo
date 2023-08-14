@@ -17,6 +17,7 @@ import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
 import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/templateliterals/Toast';
+import { CustomButton } from './components/html/Button';
 
 function App() {
   const personName = {
@@ -75,7 +76,11 @@ function App() {
      <div>
       <Toast position='center' />
      </div>
-
+     <div>
+      <CustomButton variant='primary' onClick={() => { console.log('Clicked')}}>
+        Primary Button
+      </CustomButton>
+     </div>
     </div>
   );
 }
