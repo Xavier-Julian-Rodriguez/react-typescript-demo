@@ -16,6 +16,7 @@ import { Counter } from './components/class/Counter'
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
 import { RandomNumber } from './components/restriction/RandomNumber';
+import { Toast } from './components/templateliterals/Toast';
 
 function App() {
   const personName = {
@@ -70,6 +71,9 @@ function App() {
      </div>
      <div>
       <RandomNumber value={10} isPositive/>
+     </div>
+     <div>
+      <Toast position='center' />
      </div>
 
     </div>
